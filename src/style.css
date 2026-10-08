@@ -726,6 +726,16 @@ button {
   height: fit-content;
 }
 
+.evidence-title {
+  font-size: clamp(36px, 3.25vw, 52px) !important;
+  line-height: 1.22 !important;
+}
+
+.evidence-title span {
+  display: block;
+  white-space: nowrap;
+}
+
 .method-list {
   margin: 0;
   padding: 0;
@@ -791,71 +801,7 @@ button {
 
 .about-panel {
   align-self: center;
-}
-
-.about-signals {
-  margin-bottom: 18px;
-  padding: 22px;
-  border: 1px solid rgba(90, 156, 255, 0.24);
-  border-radius: 16px;
-  background:
-    radial-gradient(circle at 90% 12%, rgba(40, 125, 255, 0.16), transparent 9rem),
-    rgba(8, 17, 35, 0.72);
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
-}
-
-.about-signals-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 18px;
-  border-bottom: 1px solid rgba(119, 162, 238, 0.16);
-}
-
-.about-signals-head span {
-  color: #74a9ff;
-  font-family: monospace;
-  font-size: 10px;
-  letter-spacing: 0.14em;
-}
-
-.about-signals-head strong {
-  color: #9aa9c0;
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.about-signal-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.about-signal-grid > div {
-  display: grid;
-  gap: 7px;
-  padding: 20px 12px 2px;
-  border-right: 1px solid rgba(119, 162, 238, 0.13);
-}
-
-.about-signal-grid > div:first-child {
-  padding-left: 0;
-}
-
-.about-signal-grid > div:last-child {
-  padding-right: 0;
-  border-right: 0;
-}
-
-.about-signal-grid b {
-  color: #dce9ff;
-  font-size: 20px;
-  letter-spacing: -0.03em;
-}
-
-.about-signal-grid span {
-  color: #71809a;
-  font-size: 11px;
-  line-height: 1.45;
+  border-top: 1px solid rgba(119, 162, 238, 0.28);
 }
 
 .education-row {
@@ -1231,25 +1177,8 @@ footer {
     font-size: clamp(30px, 8.6vw, 35px) !important;
   }
 
-  .about-signal-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .about-signal-grid > div {
-    padding: 18px 12px;
-    border-bottom: 1px solid rgba(119, 162, 238, 0.13);
-  }
-
-  .about-signal-grid > div:nth-child(2) {
-    border-right: 0;
-  }
-
-  .about-signal-grid > div:nth-last-child(-n + 2) {
-    border-bottom: 0;
-  }
-
-  .about-signal-grid > div:nth-child(odd) {
-    padding-left: 0;
+  .evidence-title {
+    font-size: clamp(27px, 8vw, 34px) !important;
   }
 
   .section-head {

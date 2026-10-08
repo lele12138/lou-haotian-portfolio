@@ -66,7 +66,7 @@ document.querySelector('#app').innerHTML = `
         <h1 id="hero-title" class="hero-title" aria-label="把复杂技术，转化为可验证的产品体验">
           <span class="title-line"><span>把复杂技术</span></span>
           <span class="title-line title-line-offset"><span>转化为可验证的</span></span>
-          <span class="title-line title-line-blue"><span>产品体验。</span></span>
+          <span class="title-line title-line-blue"><span>产品体验</span></span>
         </h1>
         <p class="hero-intro reveal">
           我是楼昊天，电子科技大学电子信息硕士在读。关注智能硬件、AI Agent 与具身智能，
@@ -97,15 +97,6 @@ document.querySelector('#app').innerHTML = `
         </p>
       </div>
       <div class="about-panel reveal-section">
-        <div class="about-signals" aria-label="关键数据">
-          <div class="about-signals-head"><span>KEY SIGNALS</span><strong>关键数据</strong></div>
-          <div class="about-signal-grid">
-            <div><b>300+</b><span>调研样本</span></div>
-            <div><b>80+</b><span>车型覆盖</span></div>
-            <div><b>95%</b><span>意图识别准确率</span></div>
-            <div><b>40+</b><span>产品判断支持</span></div>
-          </div>
-        </div>
         <div class="education-row"><span>2024—2027</span><strong>电子科技大学</strong><em>电子信息 · 硕士</em></div>
         <div class="education-row"><span>2019—2023</span><strong>江南大学</strong><em>机械工程 · 本科</em></div>
         <div class="capability-cloud" aria-label="能力标签">
@@ -155,7 +146,7 @@ document.querySelector('#app').innerHTML = `
     <section class="section evidence-section">
       <div class="evidence-sticky reveal-section">
         <p class="section-kicker">HOW I WORK</p>
-        <h2>用证据减少模糊，<br />用边界提高决策质量。</h2>
+        <h2 class="evidence-title"><span>用证据减少模糊</span><span>用边界提高决策质量</span></h2>
       </div>
       <ol class="method-list">
         <li class="reveal-section"><span>01</span><div><h3>进入场景</h3><p>通过用户调研、真实体验和业务梳理，找到问题发生的具体链路。</p></div></li>
@@ -168,7 +159,7 @@ document.querySelector('#app').innerHTML = `
     <section class="section notes-section" id="notes">
       <div class="notes-copy reveal-section">
         <p class="section-kicker">PERSONAL BLOG</p>
-        <h2>个人博客，<br />记录思考与实践。</h2>
+        <h2>个人博客</h2>
         <p>这里是我的一些思考和总结</p>
       </div>
       <div class="article-list">
