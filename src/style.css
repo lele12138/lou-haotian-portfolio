@@ -689,6 +689,60 @@ button {
   background: rgba(23, 103, 216, 0.05);
 }
 
+.experience-work {
+  display: block;
+  margin-top: 26px;
+  padding: 20px 22px;
+  border: 1px solid rgba(23, 103, 216, 0.2);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 92% 18%, rgba(40, 125, 255, 0.14), transparent 10rem),
+    rgba(255, 255, 255, 0.72);
+  box-shadow: 0 16px 38px rgba(32, 72, 128, 0.08);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.experience-work:hover,
+.experience-work:focus-visible {
+  border-color: rgba(23, 103, 216, 0.48);
+  box-shadow: 0 20px 44px rgba(32, 72, 128, 0.14);
+  transform: translateY(-3px);
+}
+
+.experience-work-meta {
+  display: block;
+  margin-bottom: 10px;
+  color: #1767d8;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.experience-work strong {
+  display: block;
+  color: #091a34;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.experience-work > p {
+  margin: 8px 0 16px;
+  color: #5d6d84;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.experience-work-link {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  padding: 0 13px;
+  border: 1px solid rgba(23, 103, 216, 0.26);
+  border-radius: 999px;
+  color: #155fca;
+  font-size: 12px;
+}
+
 .evidence-section {
   display: grid;
   grid-template-columns: 1fr 1.15fr;
@@ -735,8 +789,10 @@ button {
 
 .about-section {
   display: grid;
+  min-height: 82vh;
   grid-template-columns: 1fr 1.1fr;
   gap: clamp(50px, 9vw, 160px);
+  align-items: center;
   border-top: 1px solid var(--line);
   background:
     linear-gradient(90deg, rgba(40, 125, 255, 0.06) 1px, transparent 1px),
