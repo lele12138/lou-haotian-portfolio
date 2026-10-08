@@ -46,7 +46,7 @@ document.querySelector('#app').innerHTML = `
     </button>
     <nav class="nav-links" aria-label="主要导航">
       <a href="#about">关于</a>
-      <a href="#experience">经历与作品</a>
+      <a href="#experience">经历与作品集</a>
       <a href="#notes">个人博客</a>
     </nav>
     <a class="header-contact" href="mailto:798427490@qq.com">联系我</a>
@@ -73,7 +73,7 @@ document.querySelector('#app').innerHTML = `
           擅长从真实场景和能力边界出发，推动需求、评测与交付形成闭环。
         </p>
         <div class="hero-actions reveal">
-          <a class="button button-primary magnetic" href="#experience">查看经历与作品</a>
+          <a class="button button-primary magnetic" href="#experience">查看经历与作品集</a>
           <a class="button button-ghost" href="#notes">阅读个人博客</a>
         </div>
       </div>
@@ -119,8 +119,11 @@ document.querySelector('#app').innerHTML = `
 
     <section class="section experience-section" id="experience">
       <div class="experience-intro reveal-section">
-        <p class="section-kicker">EXPERIENCE & WORK</p>
-        <h2>让判断进入流程，<br />让流程走向交付。</h2>
+        <p class="section-kicker">EXPERIENCE & PORTFOLIO</p>
+        <div class="experience-title-block">
+          <h2>经历与作品集</h2>
+          <p>让判断进入流程，让流程走向交付。</p>
+        </div>
       </div>
       <div class="experience-list">
         ${experiences

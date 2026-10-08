@@ -632,7 +632,15 @@ button {
 }
 
 .experience-section h2 {
+  margin: 0;
   color: #08172e;
+}
+
+.experience-title-block > p {
+  margin: 18px 0 0;
+  color: #62718a;
+  font-size: 17px;
+  line-height: 1.7;
 }
 
 .experience-item {
