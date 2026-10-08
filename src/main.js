@@ -33,19 +33,31 @@ const projects = [
   },
   {
     index: '02',
+    category: 'REVIEW PLATFORM',
+    title: 'FlightSync 飞行问题复盘平台',
+    statement: '用多视角时间轴、同步预览、Bug 标注与证据片段导出，支持跨团队飞行问题复盘与判断。',
+    tags: ['多视角同步', '证据标注', '复盘协作'],
+    accent: 'cyan',
+    url: 'https://flightsync-review.l6090611.chatgpt.site/?project=7dcf65c3-a5f0-46c2-8ecd-0ac83c098ec4&record=bdfdb9c7-ed3e-474d-9b9c-f79d554d33af',
+    linkLabel: '打开 FlightSync',
+  },
+  {
+    index: '03',
     category: 'AI AGENT',
     title: '车辆配置全生命周期管理 Agent',
     statement: '连接配置平台、项目空间、代码仓库与构建流水线，重构跨平台配置流转。',
     tags: ['意图识别', '多 Agent', '上下文管理'],
-    accent: 'cyan',
+    accent: 'violet',
+    url: 'https://configpilot-agent-lab-20261006.l6090611.chatgpt.site/',
+    linkLabel: '打开 ConfigPilot',
   },
   {
-    index: '03',
+    index: '04',
     category: 'EMBODIED AI',
     title: '具身 Agent Harness 与仿真评测',
     statement: '用执行约束、回执核查和对照评测，分析不同模型介入方式的效果与成本。',
     tags: ['LIBERO', 'VLA', 'Isaac Sim'],
-    accent: 'violet',
+    accent: 'cobalt',
   },
 ]
 
@@ -118,7 +130,7 @@ document.querySelector('#app').innerHTML = `
       <div class="section-head reveal-section">
         <p class="section-kicker">SELECTED WORK / 2025—2026</p>
         <h2>在技术与用户之间，<br />建立可执行的产品路径。</h2>
-        <p class="section-note">三项实践，三种复杂系统中的产品探索。</p>
+        <p class="section-note">四项实践，覆盖体验研究、协作复盘、Agent 系统与具身评测。</p>
       </div>
       <div class="project-list">
         ${projects
@@ -141,6 +153,11 @@ document.querySelector('#app').innerHTML = `
               <h3>${project.title}</h3>
               <p>${project.statement}</p>
               <ul>${project.tags.map((tag) => `<li>${tag}</li>`).join('')}</ul>
+              ${
+                project.url
+                  ? `<a class="project-link" href="${project.url}" target="_blank" rel="noreferrer" aria-label="${project.linkLabel}（新窗口打开）">${project.linkLabel}</a>`
+                  : ''
+              }
             </div>
           </article>
         `,
