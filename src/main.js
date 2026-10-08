@@ -87,27 +87,25 @@ document.querySelector('#app').innerHTML = `
       </a>
     </section>
 
-    <section class="signal-strip" aria-label="关键数据">
-      <div class="signal-track">
-        <span><b>300+</b> 调研样本</span><i></i>
-        <span><b>80+</b> 车型覆盖</span><i></i>
-        <span><b>95%</b> 意图识别准确率</span><i></i>
-        <span><b>40+</b> 产品判断支持</span><i></i>
-        <span><b>300+</b> 调研样本</span><i></i>
-        <span><b>80+</b> 车型覆盖</span><i></i>
-      </div>
-    </section>
-
     <section class="section about-section" id="about">
       <div class="about-copy reveal-section">
         <p class="section-kicker">ABOUT</p>
-        <h2>机械工程的系统视角，<br />电子信息的技术纵深。</h2>
+        <h2 class="about-title"><span>机械工程的系统视角</span><span>电子信息的技术纵深</span></h2>
         <p>
           本科就读于江南大学机械工程专业，现于电子科技大学攻读电子信息硕士。
           经历横跨智能飞行、智能驾驶、AI Agent 与具身仿真，持续探索复杂技术如何成为清晰、可靠的产品能力。
         </p>
       </div>
       <div class="about-panel reveal-section">
+        <div class="about-signals" aria-label="关键数据">
+          <div class="about-signals-head"><span>KEY SIGNALS</span><strong>关键数据</strong></div>
+          <div class="about-signal-grid">
+            <div><b>300+</b><span>调研样本</span></div>
+            <div><b>80+</b><span>车型覆盖</span></div>
+            <div><b>95%</b><span>意图识别准确率</span></div>
+            <div><b>40+</b><span>产品判断支持</span></div>
+          </div>
+        </div>
         <div class="education-row"><span>2024—2027</span><strong>电子科技大学</strong><em>电子信息 · 硕士</em></div>
         <div class="education-row"><span>2019—2023</span><strong>江南大学</strong><em>机械工程 · 本科</em></div>
         <div class="capability-cloud" aria-label="能力标签">
