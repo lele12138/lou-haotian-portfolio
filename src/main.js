@@ -169,7 +169,7 @@ document.querySelector('#app').innerHTML = `
       <div class="notes-copy reveal-section">
         <p class="section-kicker">PERSONAL BLOG</p>
         <h2>个人博客，<br />记录思考与实践。</h2>
-        <p>这里收录我关于 AI 产品、Agent 工程、智能硬件体验与具身智能评测的文章。</p>
+        <p>这里是我的一些思考和总结</p>
       </div>
       <div class="article-list">
         <a class="article-card reveal-section" href="/blog/react-to-harness/" aria-label="阅读文章：从 ReAct 到 Harness：一个 Agent 是怎样跑起来的">
